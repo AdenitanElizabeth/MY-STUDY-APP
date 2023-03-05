@@ -1,0 +1,47 @@
+﻿body {
+    margin :0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins ', sans-serif;
+
+}
+.WelcomePage {
+    height:1500px;
+    background-image: url(img/wp3612583.jpg )
+    
+}
+.content{
+    margin-top:10%;
+    max-width:600px;
+}
+.content h1{
+    font-size:60px;
+    color:deepskyblue;
+}
+.content p{
+margin :10px  0 30px;
+color:aliceblue
+
+}
+.picture{
+    
+    right:10%;
+   top:650px;
+    position:absolute;
+    width:300px
+    
+}
+.anim{
+    opacity:0;
+    transform:translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn:hover {
+    background-color: white;
+}

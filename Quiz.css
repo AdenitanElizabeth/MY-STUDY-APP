@@ -1,0 +1,61 @@
+﻿body {
+    
+}
+.choice-container {
+    display: flex;
+    height:75px;
+    width: 500px;
+    border-radius: 50px;
+    margin-bottom: 0.9rem;
+    background-color: lightskyblue;
+    font-size: 2rem;
+    min-width: 66rem;
+    border: 2px solid blue;
+}
+.choice-text{
+    padding-top:0.5rem;
+   font-size:1.7rem;
+    width:100%;
+}
+.choice-prefix {
+    padding-top: 0.2rem;
+    font-size: 1.56rem;
+    
+}
+.correct {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    background-color: green;
+}
+#hud{
+    display:flex;
+    justify-content: space-between;
+}
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+.incorrect {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    background-color: red;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+    .choice-container:hover {
+        background-color: darkblue;
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    }
+    @media screen and (max-width:768px){
+        .choice-container{
+            min-width:40rem;
+            
+        }
+    }
